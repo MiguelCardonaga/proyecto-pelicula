@@ -1,0 +1,49 @@
+<nav>
+    <ul>
+      <li *ngIf="nombreUsuario" class="user-info">
+        <button mat-icon-button [matMenuTriggerFor]="menu">
+          <mat-icon>account_circle</mat-icon>
+          <span>{{ nombreUsuario }}</span>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item (click)="logout()">Cerrar sesión</button>
+        </mat-menu>
+      </li>
+
+    </ul>
+    <li *ngIf="rol === '1'" class="admin-button">
+      <button mat-icon-button (click)="redirigirAdminUsuarios()">
+        <mat-icon>admin_panel_settings</mat-icon>
+        <span>Admin Usuarios</span>
+      </button>
+    </li>
+
+    <li class="favoritas-button">
+      <button mat-icon-button (click)="redirigirFavoritos()">
+        <mat-icon>favorite</mat-icon> 
+        <span>Favoritas</span>
+      </button>
+    </li>
+    <div class="search-container">
+      <input type="text" [(ngModel)]="terminoBusqueda" (keyup.enter)="buscarPelicula()" placeholder="Buscar películas...">
+      <button (click)="buscarPelicula()">Buscar</button>
+    </div>
+  </nav>
+  
+ 
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2" *ngFor="let pelicula of peliculas">
+        <div class="card" (click)="mostrarDetalle(pelicula)">
+          <div class="card-img-container">
+            <img class="card-img-top" [src]="'https://image.tmdb.org/t/p/w500' + pelicula.poster_path" alt="{{ pelicula.title }}">
+            <div class="card-title-container">
+              <h5 class="card-title">{{ pelicula.title }}</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

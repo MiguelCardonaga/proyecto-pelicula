@@ -1,0 +1,8 @@
+<div class="container">
+<h1 class="custom-dialog-title" mat-dialog-title>Confirmación</h1>
+<div class="custom-dialog-content" mat-dialog-content>{{ message }}</div>
+</div>
+<div class="custom-dialog-actions" mat-dialog-actions>
+    <button mat-button class="custom-cancel-button" (click)="dialogRef.close()">Cancelar</button>
+    <button mat-button color="warn" [mat-dialog-close]="true" class="custom-accept-button">Aceptar</button>
+  </div>

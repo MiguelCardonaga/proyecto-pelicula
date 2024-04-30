@@ -1,0 +1,19 @@
+<form [formGroup]="formLogin" (ngSubmit)="submitForm()"> 
+  <h2 class="tittle">Iniciar sesión</h2>
+    <div>
+      <input type="email" id="CORREO" formControlName="CORREO" placeholder="Correo" autocomplete="off">
+    </div>
+  
+    <div>
+      <input type="password" id="CONTRASENA" formControlName="CONTRASENA" placeholder="Contraseña" autocomplete="off">
+    </div>
+  
+    <button type="submit" [disabled]="logueando">
+        <span *ngIf="logueando">Iniciando...</span>
+        <span *ngIf="!logueando">Iniciar sesión</span>
+      </button>
+
+ 
+    
+  </form>
+  

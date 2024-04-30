@@ -1,0 +1,10 @@
+<div class="container">
+  <mat-icon class="icon-remove" *ngIf="detalle === 'favoritas'"(click)="eliminarPeliculaFavorita(pelicula)" >remove_circle</mat-icon>
+  <mat-icon class="icon-heart" *ngIf="detalle !== 'favoritas'" (click)="agregarPeliculaFavorita(pelicula)">favorite</mat-icon>
+    <h2>{{ pelicula.title }}</h2>
+    <img class="card-img-top" [src]="'https://image.tmdb.org/t/p/w500' + pelicula.poster_path" alt="{{ pelicula.title }}">
+    <p>{{ pelicula.overview }}</p>
+    <button mat-button mat-dialog-close>Salir</button>
+  </div>
+
+  

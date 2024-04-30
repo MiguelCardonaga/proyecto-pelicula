@@ -1,0 +1,29 @@
+.custom-dialog-title {
+    text-align: center;
+    color: white;
+  }
+  
+  .custom-dialog-content {
+    text-align: center;
+    color: white;
+  }
+  
+  .custom-dialog-actions {
+    display: flex;
+    justify-content: center;
+   
+  }
+  
+  .custom-dialog-actions button {
+    color: rgb(0, 0, 0);
+  }
+  
+  .custom-dialog-actions .custom-cancel-button {
+    margin-right: 10px;
+  }
+
+  .container {
+
+    background-color: black;
+
+  }

@@ -1,0 +1,36 @@
+.container {
+    text-align: center; /* Alinea el contenido al centro */
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo negro semi-transparente */
+    color: white; /* Texto blanco */
+    padding: 20px; /* Espaciado interno */
+  }
+  
+  .card-img-top {
+    width: 200px; /* Ancho deseado para la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+    display: block; /* Hace que la imagen se comporte como un bloque */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+  }
+  
+  h2 {
+    margin-top: 20px; /* Margen superior para separar el título de la imagen */
+    text-align: center; /* Centra el texto horizontalmente */
+  }
+  
+  p {
+    margin-top: 10px; /* Margen superior para separar la descripción del título */
+  }
+  
+  button {
+    margin-top: 20px; /* Margen superior para separar el botón de la descripción */
+    background-color: #c800ff; /* Fondo rojo para el botón */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    cursor: pointer; /* Cursor de puntero al pasar el ratón */
+    border-radius: 5px; /* Bordes redondeados */
+    display: block; /* Convertir el botón en bloque para centrarlo */
+    margin: 0 auto; /* Centrar horizontalmente */
+  }
+  
+  

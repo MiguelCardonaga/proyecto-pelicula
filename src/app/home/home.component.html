@@ -1,0 +1,17 @@
+<div class="container">
+  <nav>
+    <ul>
+      <li><button (click)="mostrarComponenteLogin()" class="button-link">Inicar sesión</button></li>
+      <li><button (click)="mostrarComponenteRegistro()" class="button-link">Registrarse</button></li>
+    </ul>
+  </nav>
+  
+  <div *ngIf="mostrarRegister" class="register">
+    <app-register></app-register>
+  </div>
+
+  <div *ngIf="mostrarLogin" class="login">
+    <app-login></app-login>
+  </div>
+
+</div>

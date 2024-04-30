@@ -1,0 +1,54 @@
+<nav>
+    <ul>
+      <li *ngIf="nombreUsuario" class="user-info">
+        <button mat-icon-button [matMenuTriggerFor]="menu">
+          <mat-icon>account_circle</mat-icon>
+          <span>{{ nombreUsuario }}</span>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item (click)="logout()">Cerrar sesión</button>
+        </mat-menu>
+      </li>
+
+    </ul>
+    <li *ngIf="rol === '1'" class="admin-button">
+        <button mat-icon-button (click)="redirigirAdminUsuarios()">
+          <mat-icon>home</mat-icon>
+          <span>Inicio</span>
+        </button>
+      </li>
+    <!-- barra de busqueda para usuarios -->
+    <!-- <div class="search-container">
+      <input type="text" [(ngModel)]="terminoBusqueda" (keyup.enter)="buscarPelicula()" placeholder="Buscar películas...">
+      <button (click)="buscarPelicula()">Buscar</button>
+    </div> -->
+  </nav>
+
+  <div class="container">
+    <h2>Administar Usuarios</h2>
+    <mat-icon (click)="mostrarDetalleCrear()">add</mat-icon> <!-- Icono para agregar usuario -->
+    <table class="user-table">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Email</th>
+          <th>Rol</th>
+          <th>Acciones</th> <!-- Agregamos una columna para las acciones -->
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let usuario of usuarios">
+          <td>{{ usuario.Nombre }}</td>
+          <td>{{ usuario.Apellido }}</td>
+          <td>{{ usuario.Email }}</td>
+          <td>{{ usuario.rol }}</td>
+          <td>
+            <mat-icon (click)="eliminarUsuario(usuario.Email)" style="cursor: pointer;">delete</mat-icon> 
+            <mat-icon (click)="mostrarDetalle(usuario)">update</mat-icon> 
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

@@ -1,0 +1,31 @@
+<div class="container">
+  
+    <form (ngSubmit)="actualizarUsuario()">
+      <h2>Actualizar usuario</h2>
+      <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="usuario.Nombre" required>
+      </div>
+      <div class="form-group">
+        <label for="apellido">Apellido:</label>
+        <input type="text" class="form-control" id="apellido" name="apellido" [(ngModel)]="usuario.Apellido" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" name="email" [(ngModel)]="usuario.Email" required>
+      </div>
+      <div class="form-group">
+        <label for="rol">Rol:</label>
+        <select class="form-control" id="rol" name="rol" [(ngModel)]="usuario.Rol" required>
+          <option value="1">Admin</option>
+          <option value="2">Usuario</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="password">Contraseña:</label>
+        <input type="text" class="form-control" id="password" name="password" [(ngModel)]="usuario.Password" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Actualizar Usuario</button>
+    </form>
+  </div>
+  

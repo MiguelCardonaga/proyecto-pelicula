@@ -1,0 +1,43 @@
+.container {
+  background-image: url('../shared/images/fondo.avif');
+  background-size: cover;
+  background-position:center;
+  height: 100vh;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  padding: 13px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  display: inline;
+}
+
+.button-link {
+  display: inline-block;
+  padding: 15px 30px;
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button-link:hover {
+  background-color: #555;
+  border-color: #555;
+}
+
+

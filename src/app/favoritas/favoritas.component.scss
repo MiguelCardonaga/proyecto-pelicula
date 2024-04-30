@@ -1,0 +1,195 @@
+.card {
+    margin-bottom: 10px; /* Reducir el espacio entre las tarjetas */
+    position: relative;
+  }
+  
+  .card-img-container {
+    position: relative;
+    width: 150px; /* Ancho fijo del contenedor de la imagen */
+    height: 200px; /* Altura fija del contenedor de la imagen */
+    overflow: hidden; /* Oculta el exceso de contenido */
+  }
+  
+  .card-img-top {
+    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+  }
+  
+  .card-title-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi-transparente */
+    color: white; /* Texto blanco */
+    text-align: center; /* Alineación centrada */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+  }
+  
+  .card-title {
+    font-size: 1rem;
+    margin: 0; /* Elimina el margen predeterminado */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  
+  .card-text {
+    font-size: 1rem;
+  }
+  
+  .container {
+    padding: 100px;
+    background-image: url('../shared/images/fondoDifuminado.jpg');
+    min-height: 100vh; /* Al menos el 100% de la altura de la ventana */
+  }
+
+  
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .col-md-2 {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+  
+
+  nav {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    padding: 13px 0;
+    display: flex; /* Para que los elementos se distribuyan horizontalmente */
+    justify-content: space-between; /* Para que los elementos se distribuyan uniformemente */
+  }
+  
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+   
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  .button-link {
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .button-link:hover {
+    background-color: #555;
+    border-color: #555;
+  }
+ 
+  .user-info {
+    display: flex;
+    align-items: center;
+    max-width: 400px; /* Limita el ancho máximo del contenedor del nombre de usuario */
+    white-space: nowrap; /* Evita que el texto se divida en múltiples líneas */
+  }
+  
+  .user-info mat-icon {
+    margin-right: 10px; /* Ajusta el margen entre el icono y el nombre */
+  }
+
+  
+  .user-info span {
+  font-size: 1.0rem; // Tamaño de la letra más pequeño
+
+}
+
+  .search-container {
+    display: flex; /* Utiliza el modelo de caja flexible */
+    align-items: center; /* Centra verticalmente los elementos */
+    margin-right: 8%;
+}
+
+.search-container input[type="text"] {
+    margin-right: 10px; /* Espacio entre el campo de entrada y el botón */
+    padding: 8px; /* Ajustar el relleno del campo de entrada */
+    border: 1px solid #ccc; /* Borde del campo de entrada */
+    border-radius: 5px; /* Borde redondeado */
+}
+
+.search-container button {
+    padding: 8px 15px; /* Ajustar el relleno del botón */
+    border: none; /* Quitar el borde */
+    border-radius: 5px; /* Borde redondeado */
+    background-color: #c800ff; /* Fondo rojo para el botón */
+    color: white; /* Color de texto */
+    cursor: pointer; /* Cursor de puntero */
+}
+
+.search-container button:hover {
+  background-color: #c801ff; /* Fondo rojo para el botón */
+}
+
+.admin-button {
+  display: flex;
+ margin-right: 80%;
+}
+
+.admin-button mat-icon {
+  margin-right: 10px; /* Ajusta el margen entre el icono y el nombre */
+}
+
+.admin-button {
+  font-size: 0.8rem; // Tamaño de la letra más pequeño
+  display: flex;
+  align-items: center;
+  max-width: 400px; /* Limita el ancho máximo del contenedor del nombre de usuario */
+  white-space: nowrap; /* Evita que el texto se divida en múltiples líneas */
+}
+
+.admin-button span {
+  font-size: 1.0rem; // Tamaño de la letra más pequeño
+
+}
+
+
+.favoritas-button {
+  display: flex;
+ margin-right: 5%;
+}
+
+.favoritas-button mat-icon {
+  margin-right: 10px; /* Ajusta el margen entre el icono y el nombre */
+}
+
+.favoritas-button {
+  font-size: 0.8rem; // Tamaño de la letra más pequeño
+  display: flex;
+  align-items: center;
+  max-width: 400px; /* Limita el ancho máximo del contenedor del nombre de usuario */
+  white-space: nowrap; /* Evita que el texto se divida en múltiples líneas */
+}
+
+.favoritas-button span {
+  font-size: 1.0rem; // Tamaño de la letra más pequeño
+
+}
+
+.favorite-movies-title {
+    font-size: 1.5rem; /* Tamaño del título */
+    color: white; /* Color del texto */
+    text-align: center; /* Alineación centrada */
+    margin-bottom: 20px; /* Espacio inferior */
+    text-transform: uppercase; /* Convertir texto a mayúsculas */
+  }
