@@ -126,21 +126,21 @@
 .search-container input[type="text"] {
     margin-right: 10px; /* Espacio entre el campo de entrada y el botón */
     padding: 8px; /* Ajustar el relleno del campo de entrada */
-    border: 1px solid #ccc; /* Borde del campo de entrada */
-    border-radius: 5px; /* Borde redondeado */
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
 }
 
 .search-container button {
-    padding: 8px 15px; /* Ajustar el relleno del botón */
-    border: none; /* Quitar el borde */
-    border-radius: 5px; /* Borde redondeado */
-    background-color: #c800ff; /* Fondo rojo para el botón */
-    color: white; /* Color de texto */
-    cursor: pointer; /* Cursor de puntero */
+    padding: 8px 15px; 
+    border: none; 
+    border-radius: 5px; 
+    background-color: #c800ff; 
+    color: white; 
+    cursor: pointer; 
 }
 
 .search-container button:hover {
-  background-color: #c801ff; /* Fondo rojo para el botón */
+  background-color: #c801ff; 
 }
 
 .admin-button {
@@ -149,52 +149,52 @@
 }
 
 .admin-button mat-icon {
-  margin-right: 10px; /* Ajusta el margen entre el icono y el nombre */
+  margin-right: 10px; 
 }
 
 .admin-button {
-  font-size: 0.8rem; // Tamaño de la letra más pequeño
+  font-size: 0.8rem; 
   display: flex;
   align-items: center;
-  max-width: 400px; /* Limita el ancho máximo del contenedor del nombre de usuario */
-  white-space: nowrap; /* Evita que el texto se divida en múltiples líneas */
+  max-width: 400px; 
+  white-space: nowrap; 
 }
 
 .admin-button span {
-  font-size: 1.0rem; // Tamaño de la letra más pequeño
+  font-size: 1.0rem; 
 
 }
 
 .user-table {
   width: 100%;
-  border-collapse: collapse; /* Colapsar los bordes de la tabla */
+  border-collapse: collapse; 
   margin-bottom: 20px;
 }
 
 .user-table th,
 .user-table td {
-  border: none; /* Cambiar el borde a ninguno */
+  border: none; 
   padding: 8px;
   text-align: left;
 }
 
 .user-table th {
-  background-color: #62307f; /* Color de fondo para las celdas de encabezado */
+  background-color: #62307f; 
 }
 
 .user-table td {
-  background-color: #522a68; /* Color de fondo para las celdas de datos */
+  background-color: #522a68; 
 }
 
 .user-table th:first-child,
 .user-table td:first-child {
-  border-top-left-radius: 5px; /* Redondear la esquina superior izquierda */
+  border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
 
 .user-table th:last-child,
 .user-table td:last-child {
-  border-top-right-radius: 5px; /* Redondear la esquina superior derecha */
+  border-top-right-radius: 5px; 
   border-bottom-right-radius: 5px;
 }
 

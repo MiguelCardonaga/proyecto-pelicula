@@ -54,7 +54,7 @@ export class FavoritasComponent implements OnInit {
             detalle => {
               // Agregar detalles de la primera película a la lista
               if (detalle.length > 0) {
-                this.peliculasFavoritas.push(detalle[0]); // Agregar solo el primer resultado encontrado
+                this.peliculasFavoritas.push(detalle[0]); 
                 
                 
               }
@@ -77,7 +77,8 @@ export class FavoritasComponent implements OnInit {
       width: '500px',
       data: {
         ...pelicula,
-        origen: 'favoritas' // Agrega un campo "origen" con el valor "favoritas"
+        origen: 'favoritas' 
+        // aqui hacemos esto para que el componente hijo pueda leer de que origen viene la data
       }
     });
   }

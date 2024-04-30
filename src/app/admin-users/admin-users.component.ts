@@ -79,17 +79,13 @@ constructor(
   
     dialogRef.afterClosed().subscribe(result => {
       if (result) {
-        // El usuario confirmó la eliminación, aquí puedes realizar la acción
         this.userServices.eliminarUsuario(email).subscribe(
           res => {
             console.log(res);
-            // Vuelve a cargar la lista de usuarios después de eliminar uno
             this.traerUsuarios();
-            // Puedes agregar aquí cualquier lógica adicional, como mostrar un mensaje de éxito
           },
           error => {
             console.error(error);
-            // Manejar errores, por ejemplo, mostrar un mensaje de error al usuario
           }
         );
       }

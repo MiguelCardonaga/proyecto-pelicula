@@ -32,12 +32,11 @@ export class DetalleUserComponent implements OnInit {
   actualizarUsuario(): void {
     this.userServices.actualizarUsuario(this.usuario).subscribe(
       response => {
-        // Manejar respuesta exitosa
         console.log(response);
         this.alerta.open('Usuario actualizado exitosamente', 'Cerrar', { duration: 3000 });
       },
       error => {
-        // Manejar errores
+        
         console.error(error);
         this.alerta.open('Error al actualizar usuario', 'Cerrar', { duration: 3000 });
       }
