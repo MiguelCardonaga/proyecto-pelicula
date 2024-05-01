@@ -43,5 +43,5 @@ CREATE TABLE PeliculasFavoritas (
 
 
 Este proyecto front se conecta al back por medio de baseURL que contiene la dirección de un eviroment a la dirección en que se pone a correr el back,
-y por medio de archivos services.
+y por medio de archivos services. Los usuarios administradores deben llevar el rol número 1.
 
